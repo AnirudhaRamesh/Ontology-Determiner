@@ -33,7 +33,12 @@ and a single space separating each element of the triple.
     expert. **The file in `/data/owl/` will not change.**
 
 # Changing the WebVOWL interface code
-    ## TODO 
+- To update/make changes to the visualization software, WebVOWL, the source code of the WebVOWL software being used needs to be updated,
+and all necessary files need to be rebuilt into the deploy directory.
+- Run `npm run-script release` to (re-)build all necessary files into the deploy directory.
+- The new files created in the deploy directory of WebVOWL must then be transferred into src/onto_app/static/js for javascript updated, and src/onto_app/static/css for updating CSS.
+- To see these changes reflected now, refresh window on which app is being viewed.
+- For any further queries regarding the visualization software, please visit https://github.com/VisualDataWeb/WebVOWL 
 
 # Changing the way decisions are written into OWL files
 - The code for writing changes into OWL files now resides in `src/OWL_JARS`
